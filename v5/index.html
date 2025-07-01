@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PivotMaster 2025-07-01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Game Title -->
+    <h1 id="gameTitle">PivotMaster v0.0.5</h1>
+
+    <!-- Centered Game Container -->
+    <div id="gameContainer">
+
+        <!-- Sidebar -->
+        <div id="sidePanel">
+            <h3>Select Difficulty</h3>
+            <label><input type="radio" name="difficulty" value="leftRight" checked> Left to Right</label><br>
+            <label><input type="radio" name="difficulty" value="topBottom"> Top to Bottom</label><br>
+            <label><input type="radio" name="difficulty" value="diagonal"> Diagonal (Corner to Corner)</label><br><br>
+            <button onclick="setDifficulty()">Start Level</button>
+        </div>
+
+        <!-- Main Area -->
+        <div id="mainArea">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+            <!-- Analytics Panel -->
+            <div id="analyticsPanel">
+                <span>Moves:</span>
+                <span id="moveCounter">0</span>
+                <span>Distance: 
+                    <span id="distanceDisplay">0
+                        <span id="distanceUnit">px</span>
+                    </span>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <p>
+        The fourth version that introduced more animations and a better polished =UX. <br>
+        Now, you can select the difficulty level and see the square move smoothly across the canvas. <br>
+        The game mechanics are more refined, and the animations make it visually appealing. <br>
+        The ghost square preview is still there, helping you plan your moves effectively. <br>
+        This version is a step closer to a complete game experience. <br>
+        I'm ready to close out the development in 1-2 more 20 minute sessions.
+    </p>
+</body>
+</html>
